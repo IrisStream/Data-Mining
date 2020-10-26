@@ -5,3 +5,11 @@ Ví dụ:
 1. Slide bài giảng: https://drive.google.com/drive/folders/13iq-fejXC4x0XYdeZZ57wAHDo6brccoQ
 
 -----------------------------------------------------------------------------------------------
+- Tham khảo cách giải quyết missing values:
+https://www.youtube.com/watch?v=nVJhPRWJAPo
+
+- Tham khảo đồ thị trong Explorer:
+https://www.youtube.com/watch?v=TF1yh5PKaqI&feature=emb_logo
+
+- Tham khảo xác định attribute làm lớp:
+https://www.youtube.com/watch?v=bhxqV3GK-K8
