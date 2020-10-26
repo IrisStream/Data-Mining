@@ -3,5 +3,5 @@ Nếu là link thì đặt ở trong file này kèm theo đề mục.
 Ví dụ:
 
 1. Slide bài giảng: https://drive.google.com/drive/folders/13iq-fejXC4x0XYdeZZ57wAHDo6brccoQ
-
+2. Các phương pháp chọn lọc thuộc tính: https://machinelearningmastery.com/perform-feature-selection-machine-learning-data-weka/
 -----------------------------------------------------------------------------------------------
