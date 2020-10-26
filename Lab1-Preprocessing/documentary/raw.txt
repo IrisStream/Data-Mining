@@ -3,8 +3,6 @@ Nếu là link thì đặt ở trong file này kèm theo đề mục.
 Ví dụ:
 
 1. Slide bài giảng: https://drive.google.com/drive/folders/13iq-fejXC4x0XYdeZZ57wAHDo6brccoQ
------------------------------------------------------------------------------------------------
-======
 
 -----------------------------------------------------------------------------------------------
 - Tham khảo cách giải quyết missing values:
@@ -15,4 +13,6 @@ https://www.youtube.com/watch?v=TF1yh5PKaqI&feature=emb_logo
 
 - Tham khảo xác định attribute làm lớp:
 https://www.youtube.com/watch?v=bhxqV3GK-K8
-2. Các phương pháp chọn lọc thuộc tính: https://machinelearningmastery.com/perform-feature-selection-machine-learning-data-weka/>>>>>>> 41fa2cd0f9191e8bff579b45f625c435ccdb1b65
+
+- Các phương pháp chọn lọc thuộc tính: 
+https://machinelearningmastery.com/perform-feature-selection-machine-learning-data-weka/
