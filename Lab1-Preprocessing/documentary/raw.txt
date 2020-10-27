@@ -13,3 +13,6 @@ https://www.youtube.com/watch?v=TF1yh5PKaqI&feature=emb_logo
 
 - Tham khảo xác định attribute làm lớp:
 https://www.youtube.com/watch?v=bhxqV3GK-K8
+
+- Các phương pháp chọn lọc thuộc tính: 
+https://machinelearningmastery.com/perform-feature-selection-machine-learning-data-weka/
