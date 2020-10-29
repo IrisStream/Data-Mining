@@ -16,3 +16,13 @@ https://www.youtube.com/watch?v=bhxqV3GK-K8
 
 - Các phương pháp chọn lọc thuộc tính: 
 https://machinelearningmastery.com/perform-feature-selection-machine-learning-data-weka/
+
+- Five-number summary:
+https://www.statisticshowto.com/how-to-find-a-five-number-summary-in-statistics/
+
+- Tính toán five-number summary trong Weka:
+https://stackoverflow.com/questions/35813934/calculate-variance-quartiles-in-weka-explorer
+
+- Thuật ngữ đặt tên đồ thị:
+Textbook: J. Han and M. Kamber: Data Mining, Concepts and Techniques, Second Edition -
+Chapter 2: Data Preprocessing.
