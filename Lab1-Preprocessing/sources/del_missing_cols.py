@@ -29,10 +29,13 @@ def get_valid_attributes(data, missing_rate):
             if pd.isna(row[attr]):
                 count_missing[attr] += 1            #Count if missing
         count_instances += 1                        #Count instances
-    valid_attributes = []                           #List of attributes that've missing rate valid
+    valid_attributes = []                           #List of attributes that has missing rate valid
+    print("Attributes will be removed: ")
     for attr in attributes:
         if(count_missing[attr]/count_instances <= missing_rate):
             valid_attributes.append(attr)
+        else:
+            print('\t-', attr, count_missing[attr]/count_instances)    #Print out attribute that'll be removed
     return valid_attributes
 
 if __name__ == '__main__':
@@ -51,5 +54,11 @@ if __name__ == '__main__':
     f = open(outputfile, 'w')
     f.write(','.join(str(attr) for attr in valid_attributes) + '\n')    #Write attributes label
     for index, row in data.iterrows():
-        f.write(','.join(str(row[attr]) for attr in valid_attributes) + '\n')   #Write row
+        new_line = []
+        for attr in valid_attributes:
+            if(pd.isna(row[attr])):
+                new_line.append('')
+            else:
+                new_line.append(str(row[attr]))
+        f.write(','.join(cell for cell in new_line) + '\n')   #Write row
     f.close()

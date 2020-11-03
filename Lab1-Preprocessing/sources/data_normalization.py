@@ -80,7 +80,6 @@ if __name__ == '__main__':
     """
 
     inputfile, method, columns, outputfile = arg_parser()
-    print(columns)
     data = pd.read_csv(inputfile)
     attributes = list(data)
     md = None
