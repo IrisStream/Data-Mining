@@ -2,11 +2,15 @@ import sys, getopt
 import numpy as np
 import pandas as pd
 import argparse
+from pandas.api.types import is_string_dtype
 
-def compute_mean(data, col):
+def compute_mean(data, col):                    
     print('compute mean')
     count_instances = 0
     sum_instances = 0.0
+    if(is_string_dtype(data[col])):             #can not use median for non-numeric column
+            print(f"Invalid column: {col}")
+            return
     for cell in data[col]:
         if(pd.isna(cell)):
             continue
@@ -17,6 +21,9 @@ def compute_mean(data, col):
 def compute_median(data, col):
     print('compute median')
     pool = []
+    if(is_string_dtype(data[col])):              #can not use median for non-numeric column
+            print(f"Invalid column: {col}")
+            return
     for cell in data[col]:
         if(pd.isna(cell)):
             continue
@@ -31,6 +38,9 @@ def compute_median(data, col):
 def compute_mode(data, col):
     print('compute mode')
     hash_table = dict()
+    if(is_string_dtype(data[col]) == False):             #can not use mode for numeric column
+            print(f"Invalid column: {col}")
+            return
     for cell in data[col]:
         if(pd.isna(cell)):
             continue
@@ -69,7 +79,7 @@ def arg_parser():
 
 if __name__ == '__main__':
     """
-        Argument from command line. To run: 'python impute.py --input input_file_name.csv --method=method_name --columes col1 col2 ... --output output_file_name.csv'
+        Argument from command line. To run: 'python impute.py --input input_file_name.csv --method method_name --columns col1 col2 ... --output output_file_name.csv'
         Where input_file_name is the name of input data file
               method_name must in ['mean', 'median', 'mode']
               col1 col2 ... is the label of the column in data file
