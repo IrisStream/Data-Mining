@@ -21,4 +21,4 @@ if __name__ == '__main__':
                     count += 1
                     break
         
-        print(f'There are {count} row which missing value')
+        print(f'There are {count} rows which missing value')

@@ -32,7 +32,11 @@ if __name__ == '__main__':
     inputfile, missing_rate, outputfile = arg_parser()
     missing_rate = float(missing_rate)
     data = pd.read_csv(inputfile)
+    c=0
     attributes = list(data)
+    for index, row in data.iterrows():                              #count rows
+        c += 1
+    print(f'There are {c} rows before deleting')
     f = open(outputfile, 'w')
     f.write(','.join(str(attr) for attr in attributes) + '\n')
     for index, row in data.iterrows():
@@ -48,3 +52,10 @@ if __name__ == '__main__':
             f.write(','.join(str(x) for x in new_line) + '\n')
     
     f.close()
+
+    data = pd.read_csv(outputfile)                                   #Count rows after delete
+    c=0
+    attributes = list(data)
+    for index, row in data.iterrows():
+        c += 1
+    print(f'There are {c} rows after deleting')
