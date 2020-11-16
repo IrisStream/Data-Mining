@@ -1,0 +1,64 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.7 -D 0.05 -U 0.9 -M 0.7 -S -1.0 -c -1
+Relation:     output-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C14-L1
+Instances:    483
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.8 (386 instances)
+Minimum metric <confidence>: 0.7
+Number of cycles performed: 4
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 3
+
+Large Itemsets L(1):
+VMailPlan=no 403
+VMailMessage=0 403
+Churn?=True. 483
+
+Size of set of large itemsets L(2): 3
+
+Large Itemsets L(2):
+VMailPlan=no VMailMessage=0 403
+VMailPlan=no Churn?=True. 403
+VMailMessage=0 Churn?=True. 403
+
+Size of set of large itemsets L(3): 1
+
+Large Itemsets L(3):
+VMailPlan=no VMailMessage=0 Churn?=True. 403
+
+Best rules found:
+
+ 1. VMailMessage=0 403 ==> VMailPlan=no 403    <conf:(1)> lift:(1.2) lev:(0.14) [66] conv:(66.75)
+ 2. VMailPlan=no 403 ==> VMailMessage=0 403    <conf:(1)> lift:(1.2) lev:(0.14) [66] conv:(66.75)
+ 3. VMailPlan=no 403 ==> Churn?=True. 403    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 4. VMailMessage=0 403 ==> Churn?=True. 403    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 5. VMailMessage=0 Churn?=True. 403 ==> VMailPlan=no 403    <conf:(1)> lift:(1.2) lev:(0.14) [66] conv:(66.75)
+ 6. VMailPlan=no Churn?=True. 403 ==> VMailMessage=0 403    <conf:(1)> lift:(1.2) lev:(0.14) [66] conv:(66.75)
+ 7. VMailPlan=no VMailMessage=0 403 ==> Churn?=True. 403    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 8. VMailMessage=0 403 ==> VMailPlan=no Churn?=True. 403    <conf:(1)> lift:(1.2) lev:(0.14) [66] conv:(66.75)
+ 9. VMailPlan=no 403 ==> VMailMessage=0 Churn?=True. 403    <conf:(1)> lift:(1.2) lev:(0.14) [66] conv:(66.75)
+10. Churn?=True. 483 ==> VMailPlan=no 403    <conf:(0.83)> lift:(1) lev:(0) [0] conv:(0.99)
+

@@ -1,4 +1,0 @@
-Đặt tên các file hình ảnh theo chỉ mục nơi đặt hình ảnh đó trong báo cáo.
-Ví dụ:
-Chụp màn hình giao diện chức năng Explorer được đặt ở phần "Nội dung"(B) mục "Triển khai"(III) va yêu cầu "Cài đặt Weka"(1).
-Nên cách đặt tên là "B.III.1.jpg"

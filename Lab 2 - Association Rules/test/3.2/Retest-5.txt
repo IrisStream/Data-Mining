@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.6 -D 0.05 -U 0.7 -M 0.4 -S -1.0 -c -1
+Relation:     output-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C14-L1
+Instances:    483
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.6 (290 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 8
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 4
+
+Large Itemsets L(1):
+IntlPlan=no 346
+VMailPlan=no 403
+VMailMessage=None  403
+Churn?=True. 483
+
+Size of set of large itemsets L(2): 6
+
+Large Itemsets L(2):
+IntlPlan=no VMailPlan=no 302
+IntlPlan=no VMailMessage=None  302
+IntlPlan=no Churn?=True. 346
+VMailPlan=no VMailMessage=None  403
+VMailPlan=no Churn?=True. 403
+VMailMessage=None  Churn?=True. 403
+
+Size of set of large itemsets L(3): 4
+
+Large Itemsets L(3):
+IntlPlan=no VMailPlan=no VMailMessage=None  302
+IntlPlan=no VMailPlan=no Churn?=True. 302
+IntlPlan=no VMailMessage=None  Churn?=True. 302
+VMailPlan=no VMailMessage=None  Churn?=True. 403
+
+Size of set of large itemsets L(4): 1
+
+Large Itemsets L(4):
+IntlPlan=no VMailPlan=no VMailMessage=None  Churn?=True. 302
+
+Best rules found:
+
+ 1. IntlPlan=no VMailMessage=None  302 ==> VMailPlan=no 302    <conf:(1)> lift:(1.2) lev:(0.1) [50] conv:(50.02)
+ 2. IntlPlan=no VMailPlan=no 302 ==> VMailMessage=None  302    <conf:(1)> lift:(1.2) lev:(0.1) [50] conv:(50.02)
+ 3. IntlPlan=no VMailPlan=no 302 ==> Churn?=True. 302    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 4. IntlPlan=no VMailMessage=None  302 ==> Churn?=True. 302    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 5. IntlPlan=no VMailMessage=None  Churn?=True. 302 ==> VMailPlan=no 302    <conf:(1)> lift:(1.2) lev:(0.1) [50] conv:(50.02)
+ 6. IntlPlan=no VMailPlan=no Churn?=True. 302 ==> VMailMessage=None  302    <conf:(1)> lift:(1.2) lev:(0.1) [50] conv:(50.02)
+ 7. IntlPlan=no VMailPlan=no VMailMessage=None  302 ==> Churn?=True. 302    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 8. IntlPlan=no VMailMessage=None  302 ==> VMailPlan=no Churn?=True. 302    <conf:(1)> lift:(1.2) lev:(0.1) [50] conv:(50.02)
+ 9. IntlPlan=no VMailPlan=no 302 ==> VMailMessage=None  Churn?=True. 302    <conf:(1)> lift:(1.2) lev:(0.1) [50] conv:(50.02)
+10. IntlPlan=no 346 ==> VMailPlan=no 302    <conf:(0.87)> lift:(1.05) lev:(0.03) [13] conv:(1.27)
+

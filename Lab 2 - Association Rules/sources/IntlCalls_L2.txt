@@ -1,0 +1,17 @@
+IntlCalls
+None
+-1
+0
+Low
+0 
+2
+Medium Low
+2 
+4
+Medium High
+4
+6
+High
+7
+100
+.

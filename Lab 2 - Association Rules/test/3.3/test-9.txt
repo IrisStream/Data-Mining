@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.6 -D 0.05 -U 0.9 -M 0.7 -S -1.0 -c -1
+Relation:     output
+Instances:    3333
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.7 (2333 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 6
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 4
+
+Large Itemsets L(1):
+IntlPlan=no 3010
+VMailPlan=no 2411
+VMailMessage=Rarely Use  2695
+Churn?=False. 2850
+
+Size of set of large itemsets L(2): 3
+
+Large Itemsets L(2):
+IntlPlan=no VMailMessage=Rarely Use  2440
+IntlPlan=no Churn?=False. 2664
+VMailPlan=no VMailMessage=Rarely Use  2411
+
+Best rules found:
+
+ 1. VMailPlan=no 2411 ==> VMailMessage=Rarely Use  2411    <conf:(1)> lift:(1.24) lev:(0.14) [461] conv:(461.51)
+ 2. Churn?=False. 2850 ==> IntlPlan=no 2664    <conf:(0.93)> lift:(1.04) lev:(0.03) [90] conv:(1.48)
+ 3. VMailMessage=Rarely Use  2695 ==> IntlPlan=no 2440    <conf:(0.91)> lift:(1) lev:(0) [6] conv:(1.02)
+ 4. VMailMessage=Rarely Use  2695 ==> VMailPlan=no 2411    <conf:(0.89)> lift:(1.24) lev:(0.14) [461] conv:(2.62)
+ 5. IntlPlan=no 3010 ==> Churn?=False. 2664    <conf:(0.89)> lift:(1.04) lev:(0.03) [90] conv:(1.26)
+ 6. IntlPlan=no 3010 ==> VMailMessage=Rarely Use  2440    <conf:(0.81)> lift:(1) lev:(0) [6] conv:(1.01)
+

@@ -1,0 +1,68 @@
+Account length: 
+	+ new custumor	1 - 12
+	+ iron		13 - 24 	
+	+ bronze	25 - 36
+	+ silver	37 - 48
+	+ gold		49 - 60
+	+ platinum	61 - 84
+	+ diamond	85 - 120
+	+ ruby		120...
+Voice Mail Message:
+	+ none			0
+	+ low			1 - 15
+	+ medium low	16 - 25
+	+ medium high	25 - 35
+	+ high			36...
+Day minutes:
+	+ none			0
+	+ low			0 - 90
+	+ medium low	90 - 175
+	+ medium high	175 - 300
+	+ high			300...
+Day calls:
+	+ none			0
+	+ low			1 - 50
+	+ medium low	51 - 100
+	+ medium high	101 - 150
+	+ high			151...
+Evening minutes:
+	+ none			0
+	+ low			0 - 100
+	+ medium low	100 - 200
+	+ medium high	200 - 300
+	+ high			300...
+Evening calls:
+	+ none			0
+	+ low			1 - 50
+	+ medium low	51 - 100
+	+ medium high	101 - 150
+	+ high			151...
+Night minutes:
+	+ none			0
+	+ low			0 - 100
+	+ medium low	100 - 200
+	+ medium high	200 - 300
+	+ high			300...
+Night calls:
+	+ none			0
+	+ low			1 - 50
+	+ medium low	51 - 100
+	+ medium high	101 - 150
+	+ high			151...
+International minutes:
+	+ none			0
+	+ low			0 - 5
+	+ medium low	5 - 10
+	+ medium high	10 - 15
+	+ high			15...
+International calls:
+	+ none			0
+	+ low			1 - 2
+	+ medium low	3 - 4
+	+ medium high	5 - 6
+	+ high			7...
+Customer service call:
+	+ none			0
+	+ low			1
+	+ medium		2
+	+ high			2...

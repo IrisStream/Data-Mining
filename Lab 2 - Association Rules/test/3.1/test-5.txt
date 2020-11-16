@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.6 -D 0.05 -U 0.7 -M 0.4 -S -1.0 -c -1
+Relation:     output-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    3333
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.65 (2166 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 7
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 4
+
+Large Itemsets L(1):
+IntlPlan=no 3010
+VMailPlan=no 2411
+VMailMessage=0 2411
+Churn?=False. 2850
+
+Size of set of large itemsets L(2): 4
+
+Large Itemsets L(2):
+IntlPlan=no VMailPlan=no 2180
+IntlPlan=no VMailMessage=0 2180
+IntlPlan=no Churn?=False. 2664
+VMailPlan=no VMailMessage=0 2411
+
+Size of set of large itemsets L(3): 1
+
+Large Itemsets L(3):
+IntlPlan=no VMailPlan=no VMailMessage=0 2180
+
+Best rules found:
+
+ 1. IntlPlan=no VMailMessage=0 2180 ==> VMailPlan=no 2180    <conf:(1)> lift:(1.38) lev:(0.18) [603] conv:(603.05)
+ 2. IntlPlan=no VMailPlan=no 2180 ==> VMailMessage=0 2180    <conf:(1)> lift:(1.38) lev:(0.18) [603] conv:(603.05)
+ 3. VMailPlan=no 2411 ==> IntlPlan=no 2180    <conf:(0.9)> lift:(1) lev:(0) [2] conv:(1.01)
+ 4. VMailMessage=0 2411 ==> IntlPlan=no 2180    <conf:(0.9)> lift:(1) lev:(0) [2] conv:(1.01)
+ 5. VMailPlan=no VMailMessage=0 2411 ==> IntlPlan=no 2180    <conf:(0.9)> lift:(1) lev:(0) [2] conv:(1.01)
+ 6. VMailMessage=0 2411 ==> IntlPlan=no VMailPlan=no 2180    <conf:(0.9)> lift:(1.38) lev:(0.18) [603] conv:(3.6)
+ 7. VMailPlan=no 2411 ==> IntlPlan=no VMailMessage=0 2180    <conf:(0.9)> lift:(1.38) lev:(0.18) [603] conv:(3.6)
+ 8. IntlPlan=no 3010 ==> VMailPlan=no 2180    <conf:(0.72)> lift:(1) lev:(0) [2] conv:(1)
+ 9. IntlPlan=no 3010 ==> VMailMessage=0 2180    <conf:(0.72)> lift:(1) lev:(0) [2] conv:(1)
+10. IntlPlan=no 3010 ==> VMailPlan=no VMailMessage=0 2180    <conf:(0.72)> lift:(1) lev:(0) [2] conv:(1)
+

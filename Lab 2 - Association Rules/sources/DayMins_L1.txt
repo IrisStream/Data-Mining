@@ -1,0 +1,8 @@
+DayMins
+Rarely Use
+-1
+175
+Usually Use
+175
+1000
+.

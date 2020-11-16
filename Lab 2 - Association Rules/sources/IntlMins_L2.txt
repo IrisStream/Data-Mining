@@ -1,0 +1,17 @@
+IntlMins
+None
+-1 
+0
+Low
+0
+5
+Medium Low
+5 
+10
+Medium High
+10
+15
+High
+15
+100
+.

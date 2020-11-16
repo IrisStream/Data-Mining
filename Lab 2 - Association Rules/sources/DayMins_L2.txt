@@ -1,0 +1,17 @@
+DayMins
+None
+-1
+0
+Lower
+0
+90
+Medium Low 
+90
+175
+Medium High
+175
+300
+High
+300
+1000
+.

@@ -1,0 +1,8 @@
+IntlMins
+Rarely Use
+-1 
+10
+Usually Use
+10
+100
+.

@@ -1,0 +1,113 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.6 -D 0.05 -U 0.4 -M 0.1 -S -1.0 -c -1
+Relation:     output-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    3333
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.35 (1167 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 13
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 13
+
+Large Itemsets L(1):
+IntlPlan=no 3010
+VMailPlan=no 2411
+VMailMessage=0 2411
+DayMins=Medium High 1740
+DayMins=Medium Low  1382
+EveMins=Medium Low 1553
+EveMins=Medium High  1617
+NightMins=Medium High  1610
+NightMins=Medium Low 1572
+IntlMins=Medium Low 1431
+IntlMins=Medium High 1669
+CustServCalls=1 1181
+Churn?=False. 2850
+
+Size of set of large itemsets L(2): 26
+
+Large Itemsets L(2):
+IntlPlan=no VMailPlan=no 2180
+IntlPlan=no VMailMessage=0 2180
+IntlPlan=no DayMins=Medium High 1560
+IntlPlan=no DayMins=Medium Low  1257
+IntlPlan=no EveMins=Medium Low 1401
+IntlPlan=no EveMins=Medium High  1465
+IntlPlan=no NightMins=Medium High  1467
+IntlPlan=no NightMins=Medium Low 1410
+IntlPlan=no IntlMins=Medium Low 1310
+IntlPlan=no IntlMins=Medium High 1489
+IntlPlan=no Churn?=False. 2664
+VMailPlan=no VMailMessage=0 2411
+VMailPlan=no DayMins=Medium High 1250
+VMailPlan=no IntlMins=Medium High 1218
+VMailPlan=no Churn?=False. 2008
+VMailMessage=0 DayMins=Medium High 1250
+VMailMessage=0 IntlMins=Medium High 1218
+VMailMessage=0 Churn?=False. 2008
+DayMins=Medium High Churn?=False. 1474
+DayMins=Medium Low  Churn?=False. 1220
+EveMins=Medium Low Churn?=False. 1366
+EveMins=Medium High  Churn?=False. 1352
+NightMins=Medium High  Churn?=False. 1357
+NightMins=Medium Low Churn?=False. 1355
+IntlMins=Medium Low Churn?=False. 1242
+IntlMins=Medium High Churn?=False. 1410
+
+Size of set of large itemsets L(3): 12
+
+Large Itemsets L(3):
+IntlPlan=no VMailPlan=no VMailMessage=0 2180
+IntlPlan=no VMailPlan=no Churn?=False. 1878
+IntlPlan=no VMailMessage=0 Churn?=False. 1878
+IntlPlan=no DayMins=Medium High Churn?=False. 1370
+IntlPlan=no EveMins=Medium Low Churn?=False. 1276
+IntlPlan=no EveMins=Medium High  Churn?=False. 1266
+IntlPlan=no NightMins=Medium High  Churn?=False. 1273
+IntlPlan=no NightMins=Medium Low Churn?=False. 1266
+IntlPlan=no IntlMins=Medium High Churn?=False. 1313
+VMailPlan=no VMailMessage=0 DayMins=Medium High 1250
+VMailPlan=no VMailMessage=0 IntlMins=Medium High 1218
+VMailPlan=no VMailMessage=0 Churn?=False. 2008
+
+Size of set of large itemsets L(4): 1
+
+Large Itemsets L(4):
+IntlPlan=no VMailPlan=no VMailMessage=0 Churn?=False. 1878
+
+Best rules found:
+
+ 1. VMailMessage=0 DayMins=Medium High 1250 ==> VMailPlan=no 1250    <conf:(1)> lift:(1.38) lev:(0.1) [345] conv:(345.78)
+ 2. VMailPlan=no DayMins=Medium High 1250 ==> VMailMessage=0 1250    <conf:(1)> lift:(1.38) lev:(0.1) [345] conv:(345.78)
+ 3. VMailMessage=0 IntlMins=Medium High 1218 ==> VMailPlan=no 1218    <conf:(1)> lift:(1.38) lev:(0.1) [336] conv:(336.93)
+ 4. VMailPlan=no IntlMins=Medium High 1218 ==> VMailMessage=0 1218    <conf:(1)> lift:(1.38) lev:(0.1) [336] conv:(336.93)
+ 5. NightMins=Medium High  Churn?=False. 1357 ==> IntlPlan=no 1273    <conf:(0.94)> lift:(1.04) lev:(0.01) [47] conv:(1.55)
+ 6. EveMins=Medium High  Churn?=False. 1352 ==> IntlPlan=no 1266    <conf:(0.94)> lift:(1.04) lev:(0.01) [45] conv:(1.51)
+ 7. NightMins=Medium Low Churn?=False. 1355 ==> IntlPlan=no 1266    <conf:(0.93)> lift:(1.03) lev:(0.01) [42] conv:(1.46)
+ 8. EveMins=Medium Low Churn?=False. 1366 ==> IntlPlan=no 1276    <conf:(0.93)> lift:(1.03) lev:(0.01) [42] conv:(1.45)
+ 9. IntlMins=Medium High Churn?=False. 1410 ==> IntlPlan=no 1313    <conf:(0.93)> lift:(1.03) lev:(0.01) [39] conv:(1.39)
+10. IntlMins=Medium Low 1431 ==> IntlPlan=no 1310    <conf:(0.92)> lift:(1.01) lev:(0.01) [17] conv:(1.14)
+

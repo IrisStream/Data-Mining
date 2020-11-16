@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.7 -D 0.05 -U 0.7 -M 0.4 -S -1.0 -c -1
+Relation:     output
+Instances:    3333
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.65 (2166 instances)
+Minimum metric <confidence>: 0.7
+Number of cycles performed: 7
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 5
+
+Large Itemsets L(1):
+AccountLength=Loyal 2210
+IntlPlan=no 3010
+VMailPlan=no 2411
+VMailMessage=Rarely Use  2695
+Churn?=False. 2850
+
+Size of set of large itemsets L(2): 5
+
+Large Itemsets L(2):
+IntlPlan=no VMailPlan=no 2180
+IntlPlan=no VMailMessage=Rarely Use  2440
+IntlPlan=no Churn?=False. 2664
+VMailPlan=no VMailMessage=Rarely Use  2411
+VMailMessage=Rarely Use  Churn?=False. 2279
+
+Size of set of large itemsets L(3): 1
+
+Large Itemsets L(3):
+IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  2180
+
+Best rules found:
+
+ 1. IntlPlan=no VMailPlan=no 2180 ==> VMailMessage=Rarely Use  2180    <conf:(1)> lift:(1.24) lev:(0.13) [417] conv:(417.29)
+ 2. VMailPlan=no 2411 ==> IntlPlan=no 2180    <conf:(0.9)> lift:(1) lev:(0) [2] conv:(1.01)
+ 3. VMailPlan=no VMailMessage=Rarely Use  2411 ==> IntlPlan=no 2180    <conf:(0.9)> lift:(1) lev:(0) [2] conv:(1.01)
+ 4. VMailPlan=no 2411 ==> IntlPlan=no VMailMessage=Rarely Use  2180    <conf:(0.9)> lift:(1.24) lev:(0.12) [414] conv:(2.78)
+ 5. IntlPlan=no VMailMessage=Rarely Use  2440 ==> VMailPlan=no 2180    <conf:(0.89)> lift:(1.24) lev:(0.12) [414] conv:(2.59)
+ 6. VMailMessage=Rarely Use  2695 ==> Churn?=False. 2279    <conf:(0.85)> lift:(0.99) lev:(-0.01) [-25] conv:(0.94)
+ 7. VMailMessage=Rarely Use  2695 ==> IntlPlan=no VMailPlan=no 2180    <conf:(0.81)> lift:(1.24) lev:(0.13) [417] conv:(1.81)
+ 8. Churn?=False. 2850 ==> VMailMessage=Rarely Use  2279    <conf:(0.8)> lift:(0.99) lev:(-0.01) [-25] conv:(0.95)
+ 9. IntlPlan=no 3010 ==> VMailPlan=no 2180    <conf:(0.72)> lift:(1) lev:(0) [2] conv:(1)
+10. IntlPlan=no 3010 ==> VMailPlan=no VMailMessage=Rarely Use  2180    <conf:(0.72)> lift:(1) lev:(0) [2] conv:(1)
+

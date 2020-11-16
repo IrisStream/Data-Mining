@@ -1,0 +1,8 @@
+EveMins
+Rarely Use
+-1 
+200
+Usually Use 
+200
+1000
+.

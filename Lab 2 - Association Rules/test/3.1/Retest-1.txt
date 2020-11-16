@@ -1,0 +1,152 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.6 -D 0.05 -U 0.4 -M 0.1 -S -1.0 -c -1
+Relation:     output-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C14-L1
+Instances:    483
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.35 (169 instances)
+Minimum metric <confidence>: 0.6
+Number of cycles performed: 13
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 11
+
+Large Itemsets L(1):
+IntlPlan=no 346
+VMailPlan=no 403
+VMailMessage=0 403
+DayMins=Medium High 266
+EveMins=Medium Low 187
+EveMins=Medium High  265
+NightMins=Medium High  253
+NightMins=Medium Low 217
+IntlMins=Medium Low 189
+IntlMins=Medium High 259
+Churn?=True. 483
+
+Size of set of large itemsets L(2): 28
+
+Large Itemsets L(2):
+IntlPlan=no VMailPlan=no 302
+IntlPlan=no VMailMessage=0 302
+IntlPlan=no DayMins=Medium High 190
+IntlPlan=no EveMins=Medium High  199
+IntlPlan=no NightMins=Medium High  194
+IntlPlan=no IntlMins=Medium High 176
+IntlPlan=no Churn?=True. 346
+VMailPlan=no VMailMessage=0 403
+VMailPlan=no DayMins=Medium High 232
+VMailPlan=no EveMins=Medium High  223
+VMailPlan=no NightMins=Medium High  219
+VMailPlan=no NightMins=Medium Low 174
+VMailPlan=no IntlMins=Medium High 215
+VMailPlan=no Churn?=True. 403
+VMailMessage=0 DayMins=Medium High 232
+VMailMessage=0 EveMins=Medium High  223
+VMailMessage=0 NightMins=Medium High  219
+VMailMessage=0 NightMins=Medium Low 174
+VMailMessage=0 IntlMins=Medium High 215
+VMailMessage=0 Churn?=True. 403
+DayMins=Medium High EveMins=Medium High  170
+DayMins=Medium High Churn?=True. 266
+EveMins=Medium Low Churn?=True. 187
+EveMins=Medium High  Churn?=True. 265
+NightMins=Medium High  Churn?=True. 253
+NightMins=Medium Low Churn?=True. 217
+IntlMins=Medium Low Churn?=True. 189
+IntlMins=Medium High Churn?=True. 259
+
+Size of set of large itemsets L(3): 30
+
+Large Itemsets L(3):
+IntlPlan=no VMailPlan=no VMailMessage=0 302
+IntlPlan=no VMailPlan=no DayMins=Medium High 176
+IntlPlan=no VMailPlan=no EveMins=Medium High  178
+IntlPlan=no VMailPlan=no NightMins=Medium High  175
+IntlPlan=no VMailPlan=no Churn?=True. 302
+IntlPlan=no VMailMessage=0 DayMins=Medium High 176
+IntlPlan=no VMailMessage=0 EveMins=Medium High  178
+IntlPlan=no VMailMessage=0 NightMins=Medium High  175
+IntlPlan=no VMailMessage=0 Churn?=True. 302
+IntlPlan=no DayMins=Medium High Churn?=True. 190
+IntlPlan=no EveMins=Medium High  Churn?=True. 199
+IntlPlan=no NightMins=Medium High  Churn?=True. 194
+IntlPlan=no IntlMins=Medium High Churn?=True. 176
+VMailPlan=no VMailMessage=0 DayMins=Medium High 232
+VMailPlan=no VMailMessage=0 EveMins=Medium High  223
+VMailPlan=no VMailMessage=0 NightMins=Medium High  219
+VMailPlan=no VMailMessage=0 NightMins=Medium Low 174
+VMailPlan=no VMailMessage=0 IntlMins=Medium High 215
+VMailPlan=no VMailMessage=0 Churn?=True. 403
+VMailPlan=no DayMins=Medium High Churn?=True. 232
+VMailPlan=no EveMins=Medium High  Churn?=True. 223
+VMailPlan=no NightMins=Medium High  Churn?=True. 219
+VMailPlan=no NightMins=Medium Low Churn?=True. 174
+VMailPlan=no IntlMins=Medium High Churn?=True. 215
+VMailMessage=0 DayMins=Medium High Churn?=True. 232
+VMailMessage=0 EveMins=Medium High  Churn?=True. 223
+VMailMessage=0 NightMins=Medium High  Churn?=True. 219
+VMailMessage=0 NightMins=Medium Low Churn?=True. 174
+VMailMessage=0 IntlMins=Medium High Churn?=True. 215
+DayMins=Medium High EveMins=Medium High  Churn?=True. 170
+
+Size of set of large itemsets L(4): 15
+
+Large Itemsets L(4):
+IntlPlan=no VMailPlan=no VMailMessage=0 DayMins=Medium High 176
+IntlPlan=no VMailPlan=no VMailMessage=0 EveMins=Medium High  178
+IntlPlan=no VMailPlan=no VMailMessage=0 NightMins=Medium High  175
+IntlPlan=no VMailPlan=no VMailMessage=0 Churn?=True. 302
+IntlPlan=no VMailPlan=no DayMins=Medium High Churn?=True. 176
+IntlPlan=no VMailPlan=no EveMins=Medium High  Churn?=True. 178
+IntlPlan=no VMailPlan=no NightMins=Medium High  Churn?=True. 175
+IntlPlan=no VMailMessage=0 DayMins=Medium High Churn?=True. 176
+IntlPlan=no VMailMessage=0 EveMins=Medium High  Churn?=True. 178
+IntlPlan=no VMailMessage=0 NightMins=Medium High  Churn?=True. 175
+VMailPlan=no VMailMessage=0 DayMins=Medium High Churn?=True. 232
+VMailPlan=no VMailMessage=0 EveMins=Medium High  Churn?=True. 223
+VMailPlan=no VMailMessage=0 NightMins=Medium High  Churn?=True. 219
+VMailPlan=no VMailMessage=0 NightMins=Medium Low Churn?=True. 174
+VMailPlan=no VMailMessage=0 IntlMins=Medium High Churn?=True. 215
+
+Size of set of large itemsets L(5): 3
+
+Large Itemsets L(5):
+IntlPlan=no VMailPlan=no VMailMessage=0 DayMins=Medium High Churn?=True. 176
+IntlPlan=no VMailPlan=no VMailMessage=0 EveMins=Medium High  Churn?=True. 178
+IntlPlan=no VMailPlan=no VMailMessage=0 NightMins=Medium High  Churn?=True. 175
+
+Best rules found:
+
+ 1. IntlPlan=no DayMins=Medium High 190 ==> Churn?=True. 190    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 2. IntlMins=Medium Low 189 ==> Churn?=True. 189    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 3. EveMins=Medium Low 187 ==> Churn?=True. 187    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 4. IntlPlan=no VMailMessage=0 EveMins=Medium High  178 ==> VMailPlan=no 178    <conf:(1)> lift:(1.2) lev:(0.06) [29] conv:(29.48)
+ 5. IntlPlan=no VMailPlan=no EveMins=Medium High  178 ==> VMailMessage=0 178    <conf:(1)> lift:(1.2) lev:(0.06) [29] conv:(29.48)
+ 6. IntlPlan=no VMailPlan=no EveMins=Medium High  178 ==> Churn?=True. 178    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 7. IntlPlan=no VMailMessage=0 EveMins=Medium High  178 ==> Churn?=True. 178    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 8. IntlPlan=no VMailMessage=0 EveMins=Medium High  Churn?=True. 178 ==> VMailPlan=no 178    <conf:(1)> lift:(1.2) lev:(0.06) [29] conv:(29.48)
+ 9. IntlPlan=no VMailPlan=no EveMins=Medium High  Churn?=True. 178 ==> VMailMessage=0 178    <conf:(1)> lift:(1.2) lev:(0.06) [29] conv:(29.48)
+10. IntlPlan=no VMailPlan=no VMailMessage=0 EveMins=Medium High  178 ==> Churn?=True. 178    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+

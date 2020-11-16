@@ -1,0 +1,17 @@
+EveMins
+None
+-1 
+0
+Low
+0
+100
+Medium Low
+100
+200
+Medium High 
+200
+300
+High
+300 
+1000
+.

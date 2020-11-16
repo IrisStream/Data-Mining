@@ -1,0 +1,17 @@
+VMailMessage
+None 
+-1 
+0
+lower
+0
+15
+Medium Lower
+15 
+25
+Medium High
+25
+35
+High 
+35
+100
+.

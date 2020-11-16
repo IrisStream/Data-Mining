@@ -1,2 +1,0 @@
-File báo cáo sẽ đặt ở thư mục này. 
-Mỗi khi chụp hình ảnh nào thì lưu lại 1 bảng vào thư mục images rồi mới đưa vào file báo cáo.

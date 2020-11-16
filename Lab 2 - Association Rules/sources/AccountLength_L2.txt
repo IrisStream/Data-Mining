@@ -1,0 +1,26 @@
+AccountLength
+New Customer
+1
+12
+Iron
+12
+24
+Bronze
+24
+36
+Silver
+36
+48
+Gold
+48
+60
+Platinum
+60
+84
+Diamond
+84 
+120
+Ruby
+120
+1000
+.

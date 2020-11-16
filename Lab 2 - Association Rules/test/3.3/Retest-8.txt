@@ -1,0 +1,84 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.9 -D 0.05 -U 0.7 -M 0.4 -S -1.0 -c -1
+Relation:     output-weka.filters.unsupervised.instance.RemoveWithValues-S0.0-C14-L1
+Instances:    483
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.6 (290 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 8
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 8
+
+Large Itemsets L(1):
+AccountLength=Loyal 328
+IntlPlan=no 346
+VMailPlan=no 403
+VMailMessage=Rarely Use  416
+DayMins=Usually Use 298
+EveMins=Usually Use  290
+IntlCalls=Rarely Use 316
+Churn?=True. 483
+
+Size of set of large itemsets L(2): 10
+
+Large Itemsets L(2):
+AccountLength=Loyal Churn?=True. 328
+IntlPlan=no VMailPlan=no 302
+IntlPlan=no VMailMessage=Rarely Use  307
+IntlPlan=no Churn?=True. 346
+VMailPlan=no VMailMessage=Rarely Use  403
+VMailPlan=no Churn?=True. 403
+VMailMessage=Rarely Use  Churn?=True. 416
+DayMins=Usually Use Churn?=True. 298
+EveMins=Usually Use  Churn?=True. 290
+IntlCalls=Rarely Use Churn?=True. 316
+
+Size of set of large itemsets L(3): 4
+
+Large Itemsets L(3):
+IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  302
+IntlPlan=no VMailPlan=no Churn?=True. 302
+IntlPlan=no VMailMessage=Rarely Use  Churn?=True. 307
+VMailPlan=no VMailMessage=Rarely Use  Churn?=True. 403
+
+Size of set of large itemsets L(4): 1
+
+Large Itemsets L(4):
+IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  Churn?=True. 302
+
+Best rules found:
+
+ 1. AccountLength=Loyal 328 ==> Churn?=True. 328    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 2. IntlCalls=Rarely Use 316 ==> Churn?=True. 316    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 3. IntlPlan=no VMailMessage=Rarely Use  307 ==> Churn?=True. 307    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 4. IntlPlan=no VMailPlan=no 302 ==> VMailMessage=Rarely Use  302    <conf:(1)> lift:(1.16) lev:(0.09) [41] conv:(41.89)
+ 5. IntlPlan=no VMailPlan=no 302 ==> Churn?=True. 302    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 6. IntlPlan=no VMailPlan=no Churn?=True. 302 ==> VMailMessage=Rarely Use  302    <conf:(1)> lift:(1.16) lev:(0.09) [41] conv:(41.89)
+ 7. IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  302 ==> Churn?=True. 302    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 8. IntlPlan=no VMailPlan=no 302 ==> VMailMessage=Rarely Use  Churn?=True. 302    <conf:(1)> lift:(1.16) lev:(0.09) [41] conv:(41.89)
+ 9. DayMins=Usually Use 298 ==> Churn?=True. 298    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+10. EveMins=Usually Use  290 ==> Churn?=True. 290    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+

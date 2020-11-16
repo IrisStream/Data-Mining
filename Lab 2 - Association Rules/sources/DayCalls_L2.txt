@@ -1,0 +1,17 @@
+DayCalls
+None
+-1 
+0
+Low
+0
+50
+Medium Low
+50 
+100
+Medium High
+100
+150
+High 
+150 
+1000
+.

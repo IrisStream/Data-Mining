@@ -1,0 +1,226 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 10 -T 0 -C 0.8 -D 0.05 -U 0.4 -M 0.1 -S -1.0 -c -1
+Relation:     output
+Instances:    3333
+Attributes:   14
+              AccountLength
+              IntlPlan
+              VMailPlan
+              VMailMessage
+              DayMins
+              DayCalls
+              EveMins
+              EveCalls
+              NightMins
+              NightCalls
+              IntlMins
+              IntlCalls
+              CustServCalls
+              Churn?
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.35 (1167 instances)
+Minimum metric <confidence>: 0.8
+Number of cycles performed: 13
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 22
+
+Large Itemsets L(1):
+AccountLength=Loyal 2210
+IntlPlan=no 3010
+VMailPlan=no 2411
+VMailMessage=Rarely Use  2695
+DayMins=Usually Use 1783
+DayMins=Rarely Use 1550
+DayCalls=Usually Use 1682
+DayCalls=Rarely Use 1651
+EveMins=Rarely Use 1630
+EveMins=Usually Use  1703
+EveCalls=Rarely Use 1673
+EveCalls=Usually Use 1660
+NightMins=Usually Use  1687
+NightMins=Rarely Use 1646
+NightCalls=Rarely Use 1680
+NightCalls=Usually Use 1653
+IntlMins=Rarely Use 1541
+IntlMins=Usually Use 1792
+IntlCalls=Rarely Use 1954
+IntlCalls=Usually Use 1379
+CustServCalls=Low 1181
+Churn?=False. 2850
+
+Size of set of large itemsets L(2): 73
+
+Large Itemsets L(2):
+AccountLength=Loyal IntlPlan=no 1980
+AccountLength=Loyal VMailPlan=no 1587
+AccountLength=Loyal VMailMessage=Rarely Use  1793
+AccountLength=Loyal DayMins=Usually Use 1178
+AccountLength=Loyal IntlMins=Usually Use 1205
+AccountLength=Loyal IntlCalls=Rarely Use 1292
+AccountLength=Loyal Churn?=False. 1882
+IntlPlan=no VMailPlan=no 2180
+IntlPlan=no VMailMessage=Rarely Use  2440
+IntlPlan=no DayMins=Usually Use 1599
+IntlPlan=no DayMins=Rarely Use 1411
+IntlPlan=no DayCalls=Usually Use 1510
+IntlPlan=no DayCalls=Rarely Use 1500
+IntlPlan=no EveMins=Rarely Use 1473
+IntlPlan=no EveMins=Usually Use  1537
+IntlPlan=no EveCalls=Rarely Use 1511
+IntlPlan=no EveCalls=Usually Use 1499
+IntlPlan=no NightMins=Usually Use  1536
+IntlPlan=no NightMins=Rarely Use 1474
+IntlPlan=no NightCalls=Rarely Use 1514
+IntlPlan=no NightCalls=Usually Use 1496
+IntlPlan=no IntlMins=Rarely Use 1411
+IntlPlan=no IntlMins=Usually Use 1599
+IntlPlan=no IntlCalls=Rarely Use 1761
+IntlPlan=no IntlCalls=Usually Use 1249
+IntlPlan=no Churn?=False. 2664
+VMailPlan=no VMailMessage=Rarely Use  2411
+VMailPlan=no DayMins=Usually Use 1284
+VMailPlan=no DayCalls=Usually Use 1218
+VMailPlan=no DayCalls=Rarely Use 1193
+VMailPlan=no EveMins=Rarely Use 1201
+VMailPlan=no EveMins=Usually Use  1210
+VMailPlan=no EveCalls=Rarely Use 1209
+VMailPlan=no EveCalls=Usually Use 1202
+VMailPlan=no NightMins=Usually Use  1216
+VMailPlan=no NightMins=Rarely Use 1195
+VMailPlan=no NightCalls=Rarely Use 1238
+VMailPlan=no NightCalls=Usually Use 1173
+VMailPlan=no IntlMins=Usually Use 1304
+VMailPlan=no IntlCalls=Rarely Use 1409
+VMailPlan=no Churn?=False. 2008
+VMailMessage=Rarely Use  DayMins=Usually Use 1436
+VMailMessage=Rarely Use  DayMins=Rarely Use 1259
+VMailMessage=Rarely Use  DayCalls=Usually Use 1353
+VMailMessage=Rarely Use  DayCalls=Rarely Use 1342
+VMailMessage=Rarely Use  EveMins=Rarely Use 1338
+VMailMessage=Rarely Use  EveMins=Usually Use  1357
+VMailMessage=Rarely Use  EveCalls=Rarely Use 1358
+VMailMessage=Rarely Use  EveCalls=Usually Use 1337
+VMailMessage=Rarely Use  NightMins=Usually Use  1359
+VMailMessage=Rarely Use  NightMins=Rarely Use 1336
+VMailMessage=Rarely Use  NightCalls=Rarely Use 1371
+VMailMessage=Rarely Use  NightCalls=Usually Use 1324
+VMailMessage=Rarely Use  IntlMins=Rarely Use 1245
+VMailMessage=Rarely Use  IntlMins=Usually Use 1450
+VMailMessage=Rarely Use  IntlCalls=Rarely Use 1587
+VMailMessage=Rarely Use  Churn?=False. 2279
+DayMins=Usually Use Churn?=False. 1485
+DayMins=Rarely Use Churn?=False. 1365
+DayCalls=Usually Use Churn?=False. 1420
+DayCalls=Rarely Use Churn?=False. 1430
+EveMins=Rarely Use Churn?=False. 1437
+EveMins=Usually Use  Churn?=False. 1413
+EveCalls=Rarely Use Churn?=False. 1435
+EveCalls=Usually Use Churn?=False. 1415
+NightMins=Usually Use  Churn?=False. 1426
+NightMins=Rarely Use Churn?=False. 1424
+NightCalls=Rarely Use Churn?=False. 1437
+NightCalls=Usually Use Churn?=False. 1413
+IntlMins=Rarely Use Churn?=False. 1341
+IntlMins=Usually Use Churn?=False. 1509
+IntlCalls=Rarely Use Churn?=False. 1638
+IntlCalls=Usually Use Churn?=False. 1212
+
+Size of set of large itemsets L(3): 57
+
+Large Itemsets L(3):
+AccountLength=Loyal IntlPlan=no VMailPlan=no 1422
+AccountLength=Loyal IntlPlan=no VMailMessage=Rarely Use  1610
+AccountLength=Loyal IntlPlan=no Churn?=False. 1749
+AccountLength=Loyal VMailPlan=no VMailMessage=Rarely Use  1587
+AccountLength=Loyal VMailPlan=no Churn?=False. 1318
+AccountLength=Loyal VMailMessage=Rarely Use  Churn?=False. 1513
+IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  2180
+IntlPlan=no VMailPlan=no IntlMins=Usually Use 1169
+IntlPlan=no VMailPlan=no IntlCalls=Rarely Use 1269
+IntlPlan=no VMailPlan=no Churn?=False. 1878
+IntlPlan=no VMailMessage=Rarely Use  DayMins=Usually Use 1292
+IntlPlan=no VMailMessage=Rarely Use  DayCalls=Usually Use 1222
+IntlPlan=no VMailMessage=Rarely Use  DayCalls=Rarely Use 1218
+IntlPlan=no VMailMessage=Rarely Use  EveMins=Rarely Use 1214
+IntlPlan=no VMailMessage=Rarely Use  EveMins=Usually Use  1226
+IntlPlan=no VMailMessage=Rarely Use  EveCalls=Rarely Use 1232
+IntlPlan=no VMailMessage=Rarely Use  EveCalls=Usually Use 1208
+IntlPlan=no VMailMessage=Rarely Use  NightMins=Usually Use  1242
+IntlPlan=no VMailMessage=Rarely Use  NightMins=Rarely Use 1198
+IntlPlan=no VMailMessage=Rarely Use  NightCalls=Rarely Use 1239
+IntlPlan=no VMailMessage=Rarely Use  NightCalls=Usually Use 1201
+IntlPlan=no VMailMessage=Rarely Use  IntlMins=Usually Use 1300
+IntlPlan=no VMailMessage=Rarely Use  IntlCalls=Rarely Use 1432
+IntlPlan=no VMailMessage=Rarely Use  Churn?=False. 2133
+IntlPlan=no DayMins=Usually Use Churn?=False. 1380
+IntlPlan=no DayMins=Rarely Use Churn?=False. 1284
+IntlPlan=no DayCalls=Usually Use Churn?=False. 1319
+IntlPlan=no DayCalls=Rarely Use Churn?=False. 1345
+IntlPlan=no EveMins=Rarely Use Churn?=False. 1343
+IntlPlan=no EveMins=Usually Use  Churn?=False. 1321
+IntlPlan=no EveCalls=Rarely Use Churn?=False. 1349
+IntlPlan=no EveCalls=Usually Use Churn?=False. 1315
+IntlPlan=no NightMins=Usually Use  Churn?=False. 1336
+IntlPlan=no NightMins=Rarely Use Churn?=False. 1328
+IntlPlan=no NightCalls=Rarely Use Churn?=False. 1340
+IntlPlan=no NightCalls=Usually Use Churn?=False. 1324
+IntlPlan=no IntlMins=Rarely Use Churn?=False. 1252
+IntlPlan=no IntlMins=Usually Use Churn?=False. 1412
+IntlPlan=no IntlCalls=Rarely Use Churn?=False. 1540
+VMailPlan=no VMailMessage=Rarely Use  DayMins=Usually Use 1284
+VMailPlan=no VMailMessage=Rarely Use  DayCalls=Usually Use 1218
+VMailPlan=no VMailMessage=Rarely Use  DayCalls=Rarely Use 1193
+VMailPlan=no VMailMessage=Rarely Use  EveMins=Rarely Use 1201
+VMailPlan=no VMailMessage=Rarely Use  EveMins=Usually Use  1210
+VMailPlan=no VMailMessage=Rarely Use  EveCalls=Rarely Use 1209
+VMailPlan=no VMailMessage=Rarely Use  EveCalls=Usually Use 1202
+VMailPlan=no VMailMessage=Rarely Use  NightMins=Usually Use  1216
+VMailPlan=no VMailMessage=Rarely Use  NightMins=Rarely Use 1195
+VMailPlan=no VMailMessage=Rarely Use  NightCalls=Rarely Use 1238
+VMailPlan=no VMailMessage=Rarely Use  NightCalls=Usually Use 1173
+VMailPlan=no VMailMessage=Rarely Use  IntlMins=Usually Use 1304
+VMailPlan=no VMailMessage=Rarely Use  IntlCalls=Rarely Use 1409
+VMailPlan=no VMailMessage=Rarely Use  Churn?=False. 2008
+VMailMessage=Rarely Use  DayMins=Usually Use Churn?=False. 1171
+VMailMessage=Rarely Use  EveMins=Rarely Use Churn?=False. 1176
+VMailMessage=Rarely Use  IntlMins=Usually Use Churn?=False. 1208
+VMailMessage=Rarely Use  IntlCalls=Rarely Use Churn?=False. 1310
+
+Size of set of large itemsets L(4): 8
+
+Large Itemsets L(4):
+AccountLength=Loyal IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  1422
+AccountLength=Loyal IntlPlan=no VMailPlan=no Churn?=False. 1222
+AccountLength=Loyal IntlPlan=no VMailMessage=Rarely Use  Churn?=False. 1406
+AccountLength=Loyal VMailPlan=no VMailMessage=Rarely Use  Churn?=False. 1318
+IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  IntlMins=Usually Use 1169
+IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  IntlCalls=Rarely Use 1269
+IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  Churn?=False. 1878
+IntlPlan=no VMailMessage=Rarely Use  IntlCalls=Rarely Use Churn?=False. 1234
+
+Size of set of large itemsets L(5): 1
+
+Large Itemsets L(5):
+AccountLength=Loyal IntlPlan=no VMailPlan=no VMailMessage=Rarely Use  Churn?=False. 1222
+
+Best rules found:
+
+ 1. AccountLength=Loyal VMailPlan=no Churn?=False. 1318 ==> VMailMessage=Rarely Use  1318    <conf:(1)> lift:(1.24) lev:(0.08) [252] conv:(252.29)
+ 2. VMailPlan=no IntlMins=Usually Use 1304 ==> VMailMessage=Rarely Use  1304    <conf:(1)> lift:(1.24) lev:(0.07) [249] conv:(249.61)
+ 3. VMailPlan=no DayMins=Usually Use 1284 ==> VMailMessage=Rarely Use  1284    <conf:(1)> lift:(1.24) lev:(0.07) [245] conv:(245.78)
+ 4. IntlPlan=no VMailPlan=no IntlCalls=Rarely Use 1269 ==> VMailMessage=Rarely Use  1269    <conf:(1)> lift:(1.24) lev:(0.07) [242] conv:(242.91)
+ 5. VMailPlan=no NightCalls=Rarely Use 1238 ==> VMailMessage=Rarely Use  1238    <conf:(1)> lift:(1.24) lev:(0.07) [236] conv:(236.98)
+ 6. AccountLength=Loyal IntlPlan=no VMailPlan=no Churn?=False. 1222 ==> VMailMessage=Rarely Use  1222    <conf:(1)> lift:(1.24) lev:(0.07) [233] conv:(233.91)
+ 7. VMailPlan=no DayCalls=Usually Use 1218 ==> VMailMessage=Rarely Use  1218    <conf:(1)> lift:(1.24) lev:(0.07) [233] conv:(233.15)
+ 8. VMailPlan=no NightMins=Usually Use  1216 ==> VMailMessage=Rarely Use  1216    <conf:(1)> lift:(1.24) lev:(0.07) [232] conv:(232.77)
+ 9. VMailPlan=no EveMins=Usually Use  1210 ==> VMailMessage=Rarely Use  1210    <conf:(1)> lift:(1.24) lev:(0.07) [231] conv:(231.62)
+10. VMailPlan=no EveCalls=Rarely Use 1209 ==> VMailMessage=Rarely Use  1209    <conf:(1)> lift:(1.24) lev:(0.07) [231] conv:(231.43)
+

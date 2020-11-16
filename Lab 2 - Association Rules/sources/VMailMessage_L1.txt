@@ -1,0 +1,8 @@
+VMailMessage
+Rarely Use 
+-1 
+25
+Usually Use
+25
+100
+.
